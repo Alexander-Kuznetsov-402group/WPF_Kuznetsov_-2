@@ -1,0 +1,27 @@
+﻿<Window x:Class="Wpf_Kuznetsov_A.A._PR2.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_Kuznetsov_A.A._PR2"
+        mc:Ignorable="d"
+        Title="Задание 2 (Графический редактор)" Height="450" Width="800">
+    <Grid Background="#FFF1E9E9">
+        <Label x:Name="Label1" Content="Настройка цвета и размера кисти" HorizontalAlignment="Left" FontSize="25" Width="400" Height="50" VerticalAlignment="Top" Margin="55,11,0,0"/>
+        <Label x:Name="Label2" Content="Изменение цвета кисти: " HorizontalAlignment="Left" FontSize="15" Width="175" Height="30" VerticalAlignment="Top" Margin="85,61,0,0"/>
+        <Label x:Name="Label3" Content="Изменение размера кисти: " HorizontalAlignment="Left" FontSize="15" Width="200" Height="30" VerticalAlignment="Top" Margin="537,61,0,0"/>
+        <Slider Height="25" Width="100" Minimum="1" Maximum="100" Value="20" Margin="552,105,140,289" />
+        <ComboBox SelectedIndex="1"  FontFamily="Times New Roman" FontSize="16" Margin="85,96,532,289">
+            <ComboBoxItem x:Name="C1" Content="Красный" />
+            <ComboBoxItem x:Name="C2" Content="Зеленый" />
+            <ComboBoxItem x:Name="C3" Content="Синий" />
+        </ComboBox>
+        <RadioButton GroupName="redact" Content="Рисование" Width="100" Height="20" Margin="85,202,607,197"/>
+        <RadioButton x:Name="b1" GroupName="redact" Content="Ластик" Width="100" Height="20" Margin="85,227,607,172" />
+        <InkCanvas x:Name="Dr1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="250" Width="500">
+            <InkCanvas.DefaultDrawingAttributes>
+                <DrawingAttributes/>
+            </InkCanvas.DefaultDrawingAttributes>
+        </InkCanvas>
+    </Grid>
+</Window>

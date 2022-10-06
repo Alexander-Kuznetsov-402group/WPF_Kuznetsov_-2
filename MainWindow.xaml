@@ -1,12 +1,37 @@
-﻿<Window x:Class="WPF_Kuznetsov_ПР2.MainWindow"
+﻿<Window x:Class="Wpf_Kuznetsov_A.A._PR2.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WPF_Kuznetsov_ПР2"
+        xmlns:local="clr-namespace:Wpf_Kuznetsov_A.A._PR2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Задание 1" Height="500" Width="800">
     <Grid>
-        
+        <Menu BorderBrush="LightGray" BorderThickness="1" Height="30" Margin="0,0,0,439">
+            <MenuItem Header="_Меню">
+                <Button Content="Изменить цвет фона" Click="Button_Click_2" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" />
+                <Button Content="Показать информацию о разработчике" Click="Button_Click_1" MouseEnter="Button_MouseEnter_1" MouseLeave="Button_MouseLeave_1" />
+                <Button Content="Открыть задание 2" Click="Button_Click_3" MouseEnter="Button_MouseEnter_6" MouseLeave="Button_MouseLeave_6" />
+                <Button Content="Закрыть" Click="Button_Click" MouseEnter="Button_MouseEnter_2" MouseLeave="Button_MouseLeave_2" />
+            </MenuItem>
+        </Menu>
+
+        <ToolBar Margin="-8,21,-11,395" RenderTransformOrigin="0.5,0.5">
+            <ToolBar.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.419"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </ToolBar.RenderTransform>
+            <Button Content="Изменить цвет фона" Click="Button_Click_2" MouseEnter="Button_MouseEnter_3" MouseLeave="Button_MouseLeave_3" />
+            <Button Content="Показать информацию о разработчике" Click="Button_Click_1" MouseEnter="Button_MouseEnter_4" MouseLeave="Button_MouseLeave_4" />
+            <Button Content="Открыть задание 2" Click="Button_Click_3" MouseEnter="Button_MouseEnter_6" MouseLeave="Button_MouseLeave_6" />
+            <Button Content="Закрыть" Click="Button_Click" MouseEnter="Button_MouseEnter_5" MouseLeave="Button_MouseLeave_5" />
+        </ToolBar>
+        <StatusBar Margin="289,0,0,439" x:Name="StatusBar">
+            <TextBlock Text="" x:Name="TextBlock" />
+        </StatusBar>
     </Grid>
 </Window>
