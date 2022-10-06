@@ -19,9 +19,43 @@ namespace Wpf_Kuznetsov_A.A._PR2
     /// </summary>
     public partial class Window1 : Window
     {
+        
         public Window1()
         {
             InitializeComponent();
+        }
+
+        private void B1_Checked(object sender, RoutedEventArgs e)
+        {
+                if (Dr1.EditingMode == InkCanvasEditingMode.Ink)
+                    Dr1.EditingMode = InkCanvasEditingMode.EraseByPoint;
+                else
+                    Dr1.EditingMode = InkCanvasEditingMode.Ink;
+            }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            this.Dr1.EditingMode = InkCanvasEditingMode.Ink;
+        }
+
+        private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            
+        }
+
+        private void Blue_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void Green_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Red_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
