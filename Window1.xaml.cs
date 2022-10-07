@@ -46,17 +46,17 @@ namespace Wpf_Kuznetsov_A.A._PR2
 
         private void Blue_Click(object sender, RoutedEventArgs e)
         {
-            
+            Dr1.DefaultDrawingAttributes.Color = Colors.Blue;
         }
 
         private void Green_Click(object sender, RoutedEventArgs e)
         {
-
+            Dr1.DefaultDrawingAttributes.Color = Colors.Green;
         }
 
         private void Red_Click(object sender, RoutedEventArgs e)
         {
-            
+            Dr1.DefaultDrawingAttributes.Color = Colors.Red;
         }
     }
 }
