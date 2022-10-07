@@ -55,7 +55,7 @@ namespace Wpf_Kuznetsov_A.A._PR2
 
         private void Red_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
     }
 }

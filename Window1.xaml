@@ -13,7 +13,7 @@
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="540,96,65,299" Width="187">
             <Slider Minimum="1"  Maximum="100" TickPlacement="BottomRight" TickFrequency="5" ValueChanged="Slider_ValueChanged"/>
         </StackPanel>
-        <Button x:Name="Red" Content="Красный" Width="70" Height="20" Margin="85,96,637,303" Click="f"></Button>
+        <Button x:Name="Red" Content="Красный" Width="70" Height="20" Margin="85,96,637,303" Click="Red_Click"></Button>
         <Button x:Name="Green" Content="Зеленый" Width="70" Height="20" Margin="160,96,562,303" Click="Green_Click"></Button>
         <Button x:Name="Blue" Content="Синий" Width="70" Height="20" Margin="235,96,487,303" Click="Blue_Click"></Button>
         <RadioButton GroupName="redact" Content="Рисование" Width="100" Height="20" Margin="85,202,607,197" Checked="RadioButton_Checked"/>
