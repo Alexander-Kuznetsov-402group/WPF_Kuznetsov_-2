@@ -40,7 +40,8 @@ namespace Wpf_Kuznetsov_A.A._PR2
 
         private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            
+            Dr1.DefaultDrawingAttributes.Width = ((Slider)sender).Value;
+            Dr1.DefaultDrawingAttributes.Height = ((Slider)sender).Value;
         }
 
         private void Blue_Click(object sender, RoutedEventArgs e)

@@ -7,21 +7,22 @@
         mc:Ignorable="d"
         Title="Задание 2 (Графический редактор)" Height="450" Width="800">
     <Grid Background="#FFF1E9E9" Margin="0,0,-42,-31">
+        <InkCanvas Name="Dr1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="250" Width="500">
+            <InkCanvas.DefaultDrawingAttributes>
+                <DrawingAttributes Color="Green" Height="10" Width="10" />
+            </InkCanvas.DefaultDrawingAttributes>
+        </InkCanvas>
         <Label x:Name="Label1" Content="Настройка цвета и размера кисти" HorizontalAlignment="Left" FontSize="25" Width="400" Height="50" VerticalAlignment="Top" Margin="55,11,0,0"/>
         <Label x:Name="Label2" Content="Изменение цвета кисти: " HorizontalAlignment="Left" FontSize="15" Width="175" Height="30" VerticalAlignment="Top" Margin="85,61,0,0"/>
         <Label x:Name="Label3" Content="Изменение размера кисти: " HorizontalAlignment="Left" FontSize="15" Width="200" Height="30" VerticalAlignment="Top" Margin="537,61,0,0"/>
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="540,96,65,299" Width="187">
-            <Slider Minimum="1"  Maximum="100" TickPlacement="BottomRight" TickFrequency="5" ValueChanged="Slider_ValueChanged"/>
+            <Slider Name="Slider"  Minimum="1"  Maximum="100" Value="1" TickPlacement="BottomRight" TickFrequency="5" ValueChanged="Slider_ValueChanged" IsSelectionRangeEnabled="True" SmallChange="1"/>
         </StackPanel>
         <Button x:Name="Red" Content="Красный" Width="70" Height="20" Margin="85,96,637,303" Click="Red_Click"></Button>
         <Button x:Name="Green" Content="Зеленый" Width="70" Height="20" Margin="160,96,562,303" Click="Green_Click"></Button>
         <Button x:Name="Blue" Content="Синий" Width="70" Height="20" Margin="235,96,487,303" Click="Blue_Click"></Button>
         <RadioButton GroupName="redact" Content="Рисование" Width="100" Height="20" Margin="85,202,607,197" Checked="RadioButton_Checked"/>
         <RadioButton x:Name="b1" GroupName="redact" Content="Ластик" Width="100" Height="20" Margin="85,227,607,172" Checked="B1_Checked" />
-        <InkCanvas x:Name="Dr1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="250" Width="500">
-            <InkCanvas.DefaultDrawingAttributes>
-                <DrawingAttributes Color="Green" Height="10" Width="10" />
-            </InkCanvas.DefaultDrawingAttributes>
-        </InkCanvas>
+        
     </Grid>
 </Window>
